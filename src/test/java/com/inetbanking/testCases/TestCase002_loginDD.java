@@ -53,7 +53,7 @@ public class TestCase002_loginDD extends BaseTest{
 		XLUtils obj = new XLUtils(System.getProperty("user.dir")+"\\src\\test\\java\\com\\inetbanking\\testData\\LoginTestData.xlsx" , "Sheet1");
 		int rowCount = obj.getRowCount();
 		int cellCount = obj.getCellCount();
-		System.out.println("Rows="+ rowCount + " column= "+ cellCount);
+		System.out.println("Rows="+ rowCount + " columns= "+ cellCount);
 		String data[][] = new String[rowCount][cellCount];
 		for(int r=1 ; r<=rowCount ; r++) {
 			for(int c=0 ; c<cellCount ; c++) {
